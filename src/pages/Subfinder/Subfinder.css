@@ -1,0 +1,25 @@
+.loading {
+    display: none;
+}
+
+.loading > .circle1,
+.loading > .circle2,
+.loading > .circle3 {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #2563eb;
+    border-radius: 0.5rem;
+    margin: 4rem 0.5rem;
+    animation: animate 1s linear infinite
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1.1);
+        background-color: #4c80f0;
+    }
+}
