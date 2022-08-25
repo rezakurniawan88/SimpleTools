@@ -16,7 +16,7 @@ function DecimalConverter() {
 
     return (
         <div className="decimal-converter pb-7">
-            <h1 className="text-3xl font-bold text-center my-6">Decimal Converter</h1>
+            <h1 className="text-2xl md:text-3xl dark:text-[#ccd6f6] font-bold text-center my-6">Decimal Converter</h1>
             <NumberInput title="Masukkan angka decimal disini" name="decimal" id="decimal" onChange={(e) => setDecimalValue(e.target.value)} />
             <div className="converter-dec-to-bin w-4/5 md:w-2/3 m-auto flex flex-wrap gap-5">
                 <ImutableNumberInput title="Binary" name="binaryResult" id="binaryResult" value={binaryValue} />

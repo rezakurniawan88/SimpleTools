@@ -42,7 +42,7 @@ function Navbar() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                     ) : (
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
                         </svg>
                     )}
@@ -55,60 +55,60 @@ function Navbar() {
                     </button>
                 </a>
             </div>
-            <div className={isOpen ? "menu absolute w-56 h-full top-0 left-0 pt-6 transition-all bg-white border shadow-sm" : "menu absolute w-56 h-full top-0 left-0 pt-6 -ml-56 transition-all bg-slate-50 shadow-sm"}>
+            <div className={isOpen ? "menu absolute w-56 h-full top-0 left-0 pt-6 transition-all bg-white border-r-[1px] shadow-sm dark:bg-[#112240]" : "-ml-56 menu absolute w-56 h-full top-0 left-0 pt-6 transition-all bg-white border-r-[1px] shadow-sm dark:bg-[#112240]"}>
                 <div className="menu-list pl-6 flex flex-col gap-3">
-                    <h2 className="font-semibold text-base pl-10">SimpleTools</h2>
+                    <h2 className="font-semibold text-base pl-10 dark:text-white">SimpleTools</h2>
                     <div className="cryptography mt-6 py-2 cursor-pointer transition-all" onClick={showHideMenu}>
                         <div className="title-menu flex justify-between pb-1" id="menu-container">
-                            <h2 className="font-semibold">Cryptography</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1 mr-4 transition-all" id="chevron-button">
+                            <h2 className="font-semibold dark:text-white">Cryptography</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1 mr-4 dark:text-white transition-all" id="chevron-button">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                             </svg>
                         </div>
                         <div id="menu-list" className="transition-all">
                             <Link to="/" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">Base64 Encode/Decode</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">Base64 Encode/Decode</p>
                             </Link>
                             <Link to="/rot13" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">ROT13 Encode/Decode</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">ROT13 Encode/Decode</p>
                             </Link>
                             <Link to="/md-hash-encode" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">MD Hash Encode</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">MD Hash Encode</p>
                             </Link>
                             <Link to="/sha-hash-encode" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">SHA Hash Encode</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">SHA Hash Encode</p>
                             </Link>
                         </div>
                     </div>
                     <div className="numbers cursor-pointer transition-all" onClick={showHideMenu}>
                         <div className="title-menu flex justify-between" id="menu-container">
-                            <h2 className="font-semibold">Numbers</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1 mr-4" id="chevron-button">
+                            <h2 className="font-semibold dark:text-white">Numbers</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1 mr-4 transition-all dark:text-white" id="chevron-button">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                             </svg>
                         </div>
                         <div id="menu-list" className="transition-all">
                             <Link to="/decimal" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">Decimal Converter</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">Decimal Converter</p>
                             </Link>
                             <Link to="/binary" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">Binary Converter</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">Binary Converter</p>
                             </Link>
                         </div>
                     </div>
                     <div className="other cursor-pointer transition-all" onClick={showHideMenu}>
                         <div className="title-menu flex justify-between" id="menu-container">
-                            <h2 className="font-semibold">Others</h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1 mr-4" id="chevron-button">
+                            <h2 className="font-semibold dark:text-white">Others</h2>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 mt-1 mr-4 transition-all dark:text-white" id="chevron-button">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                             </svg>
                         </div>
                         <div id="menu-list" className="transition-all">
                             <Link to="/subfinder" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">Subdomain Finder</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">Subdomain Finder</p>
                             </Link>
                             <Link to="/screen-size" onClick={toggleMenu}>
-                                <p className="text-sm text-[#44435C] font-medium hover:text-blue-400 my-2">What Is My Screen Size?</p>
+                                <p className="text-sm text-[#44435C] font-medium hover:text-green-500 my-2 dark:text-slate-300">What Is My Screen Size?</p>
                             </Link>
                         </div>
                     </div>

@@ -16,7 +16,7 @@ function BinaryConverter() {
 
     return (
         <div className="binary-converter pb-7">
-            <h1 className="text-3xl font-bold text-center my-6">Binary Converter</h1>
+            <h1 className="text-2xl md:text-3xl dark:text-[#ccd6f6] font-bold text-center my-6">Binary Converter</h1>
             <NumberInput title="Masukkan angka binary disini" name="binary" id="binary" onChange={(e) => setBinaryValue(e.target.value)} />
             <div className="converter-dec-to-bin w-4/5 md:w-2/3 m-auto flex flex-wrap gap-5">
                 <ImutableNumberInput title="Octal" name="octalResult" id="octalResult" value={octalValue} />

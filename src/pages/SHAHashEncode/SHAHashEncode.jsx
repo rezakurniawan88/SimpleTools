@@ -27,8 +27,8 @@ const SHAHashEncode = () => {
 
     return (
         <div className="sha">
-            <h1 className="text-center text-3xl font-bold my-5">SHA Hash Encode</h1>
-            <div className="container flex flex-col gap-8 items-center m-auto">
+            <h1 className="text-center text-2xl md:text-3xl dark:text-[#ccd6f6] font-bold my-5">SHA Hash Encode</h1>
+            <div className="container flex flex-col gap-8 items-center m-auto pb-10">
                 <InputComponent name="encode" id="encode" content="Encode" onClick={encodeShaHash} onChange={(e) => setInputHash(e.target.value)} />
                 <ImutableInput title="SHA-1" value={resultSha1} />
                 <ImutableInput title="SHA-224" value={resultSha224} />
