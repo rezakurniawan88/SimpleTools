@@ -9,7 +9,7 @@ function BinaryConverter() {
     const [hexaValue, setHexaValue] = useState(0);
 
     useEffect(() => {
-        setDecimalValue(parseInt(binaryValue).toString(10));
+        setDecimalValue(parseInt(binaryValue, 10));
         setOctalValue(parseInt(binaryValue).toString(8));
         setHexaValue(parseInt(binaryValue).toString(16));
     }, [binaryValue])
